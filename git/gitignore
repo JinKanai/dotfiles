@@ -1,0 +1,7 @@
+*.retry
+usualkey.*
+__pycache__/
+.DS_Store
+venv/
+keys/
+

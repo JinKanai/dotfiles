@@ -1,0 +1,5 @@
+selectp -t 0
+splitw -h
+splitw -v
+splitw -v
+selectp -t 0

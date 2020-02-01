@@ -1,0 +1,9 @@
+neovim/
+basic_pkgs.sh
+requirements.txt
+*.log
+tmux.conf
+.idea/
+venv/
+config.json.bak
+

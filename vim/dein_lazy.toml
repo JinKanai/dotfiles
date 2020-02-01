@@ -1,0 +1,19 @@
+[[plugins]]
+repo = 'davidhalter/jedi-vim'
+if = '''has('vim')'''
+on_ft = ['python']
+
+[[plugins]]
+repo = 'zchee/deoplete-jedi'
+if = '''has('nvim')'''
+on_ft = ['python']
+
+
+[[plugins]]
+repo = 'andviro/flake8-vim'
+on_ft = ['python']
+
+[[plugins]]
+repo = 'vim-scripts/VOoM'
+on_ft = ['markdown']
+

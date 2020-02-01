@@ -1,0 +1,35 @@
+ServerAliveInterval 60
+
+Host *
+  Port         22
+  IdentityFile ~/Downloads/usualkey
+  TCPKeepAlive yes
+  StrictHostKeyChecking no
+  UserKnownHostsFile=/dev/null
+
+
+Host xxx
+  HostName xxx
+  User user
+  Port 22
+  IdentityFile ~/xxx.pem
+  StrictHostKeyChecking no
+  UserKnownHostsFile=/dev/null
+  ProxyCommand /mingw64/bin/connect -S user@xxxx.co.jp:port %h %p
+  ForwardX11 yes
+
+Host 172.*
+  User ubuntu
+  Port 22
+  IdentityFile ~/xxx.pem
+  StrictHostKeyChecking no
+  UserKnownHostsFile=/dev/null
+  ProxyCommand ssh -Y -C -W %h:%p 54.xxx
+  ForwardX11 yes
+  ForwardingAgent Yes
+
+# for direct connect to aws ec2 instances
+host i-* mi-*
+    ProxyCommand sh -c "aws ssm start-session --target %h --document-name AWS-StartSSHSession --parameters 'portNumber=%p'"
+
+
