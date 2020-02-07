@@ -55,6 +55,7 @@ nnoremap <Esc><Esc> :nohlsearch<CR><ESC>
 
 autocmd FileType python setlocal completeopt-=preview
 autocmd BufNewFile,BufRead *.yml setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd BufNewFile,BufRead *.yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 map <C-n> :NERDTreeToggle<CR>
 map <S-p> :PyFlakeAuto<CR>
