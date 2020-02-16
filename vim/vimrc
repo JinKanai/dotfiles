@@ -21,6 +21,9 @@ if &runtimepath !~# '/dein.vim'
   execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
 
+" set interpreter's path
+let g:node_host_prog = system('echo -n (which neovim-node-host)')
+
 " Required:
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
