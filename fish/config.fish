@@ -20,6 +20,7 @@ complete --command aws --no-files --arguments '(begin; set --local --export COMP
 
 # enviroment values
 set -x EDITOR vi
+set -x DOCKER_HOST tcp://192.168.64.4:2376
 
 # into vim mode
 fish_vi_key_bindings
