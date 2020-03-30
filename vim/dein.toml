@@ -15,22 +15,22 @@ hook_add = '''
 [[plugins]]
 repo ='ervandew/supertab'
 
-[[plugins]]
-repo = 'vim-airline/vim-airline'
-depends = ['tagber', 'vim-fugitive']
-hook_add = '''
-    let g:airline_powerline_fonts = 1
-    let g:airline_section_y = 'BN: %{bufnr("%")}'
-    let g:airline#extensions#tabline#enabled = 1
-    let g:airline#extensions#tabline#fnamemod = ':t'
-    let g:airline#extensions#branch#enabled = 0
-    let g:airline#extensions#readonly#enabled = 0
-    let g:airline_section_b =
-        \ '%{airline#extensions#branch#get_head()}' .
-        \ '%{""!=airline#extensions#branch#get_head()?("  " . g:airline_left_alt_sep . " "):""}' .
-        \ '%t%( %M%)'
-    let g:airline_section_c = ''
-'''
+#[[plugins]]
+#repo = 'vim-airline/vim-airline'
+#depends = ['tagber', 'vim-fugitive']
+#hook_add = '''
+#    let g:airline_powerline_fonts = 1
+#    let g:airline_section_y = 'BN: %{bufnr("%")}'
+#    let g:airline#extensions#tabline#enabled = 1
+#    let g:airline#extensions#tabline#fnamemod = ':t'
+#    let g:airline#extensions#branch#enabled = 0
+#    let g:airline#extensions#readonly#enabled = 0
+#    let g:airline_section_b =
+#        \ '%{airline#extensions#branch#get_head()}' .
+#        \ '%{""!=airline#extensions#branch#get_head()?("  " . g:airline_left_alt_sep . " "):""}' .
+#        \ '%t%( %M%)'
+#    let g:airline_section_c = ''
+#'''
 
 #[[plugins]]
 #repo = 'vim-airline/vim-airline-themes'
@@ -116,7 +116,10 @@ repo = 'Shougo/neosnippet'
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
 
+#[[plugins]]
+#repo = 'neoclide/coc.nvim'
+#build = './install.sh nightly'
+#hook_add = 'source ~/.config/nvim/coc-options.vim'
+
 [[plugins]]
-repo = 'neoclide/coc.nvim'
-build = './install.sh nightly'
-hook_add = 'source ~/.config/nvim/coc-options.vim'
+repo = 'itchyny/lightline.vim'
