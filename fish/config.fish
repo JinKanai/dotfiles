@@ -32,10 +32,11 @@ end
 
 # aliases
 alias vi 'nvim'
-# alias ls 'gls --color=auto' 
+alias ls 'gls --color=auto'
 alias tcp 'tmux save-buffer - | reattach-to-user-namespace pbcopy'
 alias tmuxx 'tmux attach; or tmux new-session \; source-file ~/.dotfiles/tmux/session'
 alias tmuxvim 'tmux splitw -v -p 30'
+alias updatedb 'sudo /usr/libexec/locate.updatedb'
 
 #direnv
 eval (direnv hook fish)
