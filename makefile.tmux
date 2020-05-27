@@ -15,4 +15,8 @@ $(HOME)/.config/powerline/themes/tmux/mytheme.json:
 $(HOME)/.tmux.conf:
 	ln -s $(PWD)/tmux/tmux.conf $@
 
+clean_tmux:
+	rm -rf ~/.config/powerline
+	rm -f ~/.tmux/tmux.conf
+
 

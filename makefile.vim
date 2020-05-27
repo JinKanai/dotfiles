@@ -30,3 +30,10 @@ $(HOME)/.ideavimrc:
 	cp $(PWD)/vim/vimrc $@
 	echo "set surround" >> $@
 
+clean_vim:
+	rm -rf $(HOME)/.vim
+	rm -f $(HOME)/.vimrc
+	rm -rf $(HOME)/.config/nvim
+	rm -f $(HOME)/.viminfo
+	rm -rf $(HOME)/.ideavimrc
+
