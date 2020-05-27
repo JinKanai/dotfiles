@@ -20,7 +20,7 @@ complete --command aws --no-files --arguments '(begin; set --local --export COMP
 
 # enviroment values
 set -x EDITOR vi
-set -x DOCKER_HOST tcp://192.168.64.4:2376
+#set -x DOCKER_HOST tcp://192.168.64.4:2376
 
 # into vim mode
 fish_vi_key_bindings
@@ -39,3 +39,4 @@ alias tmuxvim 'tmux splitw -v -p 30'
 
 #direnv
 eval (direnv hook fish)
+#set -g fish_user_paths "/usr/local/bin" $fish_user_paths
