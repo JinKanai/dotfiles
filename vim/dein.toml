@@ -98,10 +98,14 @@ repo = 'Shougo/deoplete.nvim'
 if = '''has('nvim')'''
 hook_add = '''
     let g:deoplete#enable_at_startup=1
-    let g:deoplete#auto_complete_delay=0
-    let g:deoplete#enable_smart_case=1
+#    let g:deoplete#auto_complete_delay=0
+#    let g:deoplete#enable_smart_case=1
     let g:deoplete#enable_auto_close_preview = 0
 '''
+hook_source = '''
+    call deoplete#custom#option('auto_complete_delay', v:0)
+    call deoplete#custom#option('smart_case', v:true)
+ '''
 
 [[plugins]]
 repo = 'tpope/vim-surround'
