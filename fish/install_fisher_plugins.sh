@@ -2,9 +2,9 @@
 
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
 
-fisher add jethrokuan/z
-fisher add 0rax/fish-bd
-fisher add jorgebucaran/fish-nvm
-fisher add oh-my-fish/plugin-peco
+fisher install jethrokuan/z
+fisher install 0rax/fish-bd
+fisher install jorgebucaran/fish-nvm
+fisher install oh-my-fish/plugin-peco
 
 

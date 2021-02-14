@@ -11,7 +11,8 @@ make fish
 make vim
 make tmux
 
-fish/install_fisher_plugins.sh
+/usr/bin/fish /fish/install_fisher_plugins.sh
+
 git/gitsettings.sh
 
 echo "===> dotfiles installations are finished. then run 'fish_update_completions in fish shell to update completions.'"
