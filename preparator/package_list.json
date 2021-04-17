@@ -48,6 +48,7 @@
                 "git-flow",
                 "reattach-to-user-namespace",
                 "mas",
+                "direnv",
                 "vim"
             ],
         "cask":

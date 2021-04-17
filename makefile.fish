@@ -20,5 +20,6 @@ docker.fish:
 docker-compose.fish:
 	curl https://raw.githubusercontent.com/docker/compose/master/contrib/completion/fish/docker-compose.fish -o ~/.config/fish/completions/$@
 git.fish:
-	curl https://raw.githubusercontent.com/bobthecow/git-flow-completion/master/git.fish -o ~/.config/fish/completions/$@
+	curl https://raw.githubusercontent.com/fish-shell/fish-shell/master/share/completions/git.fish > ~/.config/fish/completions/git.fish
+	# curl https://raw.githubusercontent.com/bobthecow/git-flow-completion/master/git.fish -o ~/.config/fish/completions/$@
 
