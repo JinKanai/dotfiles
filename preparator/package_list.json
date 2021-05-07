@@ -66,8 +66,7 @@
                 "neovim",
                 "flake8",
                 "awscli",
-                "ipython",
-                "powerline-status"
+                "ipython"
             ]
     }
 }
